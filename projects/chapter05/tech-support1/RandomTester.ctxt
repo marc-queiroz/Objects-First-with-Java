@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=RandomTester()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ RandomTester\n
+comment1.params=upperLimit
+comment1.target=void\ printOneRandom(int)
+comment1.text=\n\n
+comment2.params=upperLimit\ howMany
+comment2.target=void\ printMultiRandom(int,\ int)
+comment2.text=\n\n
+comment3.params=
+comment3.target=void\ throwDice()
+comment3.text=\n\n
+comment4.params=
+comment4.target=void\ getResponse()
+comment4.text=\n\n
+comment5.params=addResponse
+comment5.target=void\ addToResponseArray(java.lang.String)
+comment5.text=\n\n
+numComments=6
