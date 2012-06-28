@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * 
  * @author (your name) 
  * @version (a version number or a date)
- * 
+ * A line to test Github
  */
 public class RandomTester
 {
