@@ -5,7 +5,8 @@ import java.util.ArrayList;
  * 
  * @author (your name) 
  * @version (a version number or a date)
- * 
+ * A line to test Github
+ * A line to test mercurial's branching
  */
 public class RandomTester
 {
