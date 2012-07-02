@@ -1,4 +1,5 @@
-
+import java.util.StringTokenizer;
+import java.util.HashSet;
 /**
  * Write a description of class TokenizerTest here.
  * 
@@ -8,26 +9,25 @@
 public class TokenizerTest
 {
     // instance variables - replace the example below with your own
-    private int x;
+    String text;
 
     /**
      * Constructor for objects of class TokenizerTest
      */
     public TokenizerTest()
     {
-        // initialise instance variables
-        x = 0;
-    }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+}
+
+    public void split(String text)
     {
-        // put your code here
-        return x + y;
+        // initialise instance variables
+        StringTokenizer tokenizer = new StringTokenizer(text);
+        System.out.print("> ");
+        
+        while(tokenizer.hasMoreTokens()){
+            System.out.println(tokenizer.nextToken());
+        
     }
+}
 }
