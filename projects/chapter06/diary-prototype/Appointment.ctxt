@@ -1,9 +1,11 @@
 #BlueJ class context
 comment0.params=description\ duration
-comment0.target=Appointment(String,\ int)
-comment0.text=\nCreate\ an\ appointment\ with\ a\ given\ duration.\n@param\ description\ The\ reason\ for\ the\ appointment.\n@param\ duration\ The\ length\ of\ the\ appointment\ in\ hours.\n\n
-comment1.target=String\ getDescription()
-comment1.text=\n@return\ The\ description\ of\ the\ appointment.\n\n
+comment0.target=Appointment(java.lang.String,\ int)
+comment0.text=\n\ Create\ an\ appointment\ with\ a\ given\ duration.\n\ @param\ description\ The\ reason\ for\ the\ appointment.\n\ @param\ duration\ The\ length\ of\ the\ appointment\ in\ hours.\n
+comment1.params=
+comment1.target=java.lang.String\ getDescription()
+comment1.text=\n\ @return\ The\ description\ of\ the\ appointment.\n
+comment2.params=
 comment2.target=int\ getDuration()
-comment2.text=\n@return\ The\ duration\ (in\ hours)\ of\ the\ appointment.\n\n
+comment2.text=\n\ @return\ The\ duration\ (in\ hours)\ of\ the\ appointment.\n
 numComments=3
