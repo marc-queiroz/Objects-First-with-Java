@@ -46,6 +46,21 @@ public class CalcEngineTester
         return engine.getDisplayValue();
     }
 
+        public int testComplex()
+    {
+        // Make sure the engine is in a valid starting state.
+        engine.clear();
+        // Simulate the presses: 3 + 4 =
+        engine.numberPressed(3);
+        engine.plus();
+        engine.numberPressed(4);
+        engine.minus();
+        engine.numberPressed(5);
+        engine.equals();
+        // Return the result, which should be 7.
+        return engine.getDisplayValue();
+    }
+    
     /**
      * Test the minus operation of the engine.
      * @return the result of calculating 9 - 4.
