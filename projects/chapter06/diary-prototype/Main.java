@@ -28,11 +28,12 @@ public class Main
     public void makeAppointment(int day,int time,int duration,String description)
     {
         // put your code here
+        
         Day createdDay = new Day(day);
         Appointment appointment = new Appointment(description,duration);
         
         createdDay.makeAppointment(time,appointment);
-        
+        createdDay.showAppointments();
         
     }
 }
