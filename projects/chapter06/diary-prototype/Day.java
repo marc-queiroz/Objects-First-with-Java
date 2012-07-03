@@ -74,17 +74,18 @@ public class Day
      * @return true if the appointment was successful,
      *         false otherwise.
      */
-    public boolean makeAppointment(int time,
-                                   Appointment appointment)
+    public boolean makeAppointment(int time,int duration, String description)
+                                 
     {
+        Appointment appt = new Appointment (description, duration);
+        
         if(validTime(time)) {
             int startTime = time - START_OF_DAY;
             if(appointments[startTime] == null) {
-                int duration = appointment.getDuration();
                 // Fill in all the slots for the full duration
                 // of the appointment.
                 for(int i = 0; i < duration; i++) {
-                    appointments[startTime + i] = appointment;
+                    appointments[startTime + i] = appt;
                 }
                 return true;
             }
