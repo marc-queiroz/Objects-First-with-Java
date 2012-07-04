@@ -1,18 +1,27 @@
+import java.util.ArrayList;
+
 /**
  * The main part of the calculator doing the calculations.
  * 
  * @author  David J. Barnes and Michael Kolling
  * @version 0.1 (incomplete)
+ * testing mercurial
  */
 public class CalcEngine
 {
     // Put instance variables here.
-
+    int displayValue = 0;
+    int currentNumber = 0;
+    int currentOperator = ' ';
+    
+    ArrayList numberArray = new ArrayList();
+    ArrayList operatorArray = new ArrayList();
     /**
      * Create a CalcEngine.
      */
     public CalcEngine()
     {
+        
     }
 
     /**
@@ -21,7 +30,7 @@ public class CalcEngine
      */
     public int getDisplayValue()
     {
-        return 0;
+        return displayValue;
     }
 
     /**
@@ -32,6 +41,9 @@ public class CalcEngine
      */
     public void numberPressed(int number)
     {
+        displayValue = displayValue * 10 + number;
+        getDisplayValue();
+        currentNumber = displayValue;
     }
 
     /**
@@ -39,6 +51,10 @@ public class CalcEngine
      */
     public void plus()
     {
+        numberArray.add(currentNumber);
+        currentNumber = 0;
+        
+        operatorArray.add('+');
     }
 
     /**
